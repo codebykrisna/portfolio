@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="random.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+   
+   
+ 
+   
+</head>
+<body>
+	<header>
+		<div class="user">
+            <div class="image">
+                <img id="usera" src="assets/user1.jpeg">
+            </div>
+		   <h1 class="name">Krishna rajput</h1>
+		   <p class="post">Frontend developer</p>
+		</div>
+	   <nav class="navbar">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#education">Education</a></li>
+		  <!--  <li><a href="#portfolio">Portfolio</a></li> -->
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		</nav>
+	</header>
+
+	<div id="menu" class="fa fa-bars"></div>
+   
+
+
+<section class="home" id="home">
+<h3>HI THERE!</h3>
+<h1>I'm <span>KRISHNA RAJPUT</span></h1>
+<p>Hello Everyone, I am a self taught frontend Developer. I started learning about web programming in 2021 and I am very fluent in HTML, CSS and JavaScript. 
+I have hosted projects in my sololearn profile which you can check out. </p>
+	<a href="#about"><button class="btn">About Me <i class="fa fa-user"></i></button></a>
+</section>
+
+
+<section class="about" id="about">
+    
+	<h1 class="heading"><span>about</span> me</h1>
+	<div class="row">
+		<div class="info">
+            <div class="image">
+                <img id="usera" src="assets/user1.jpeg">
+            </div>
+			<h3><span>name:</span>Krishna Rajput</h3>
+			<h3><span>age:</span>19</h3>
+			<h3><span>qualifications:</span>persuing Btech</h3>
+			<h3><span>post:</span>Frontend developer</h3>
+			<h3><span>language:</span>english</h3>
+			<a href="#"><button class="btn">Download CV <i class="fa fa-download"></i></button></a>
+		</div>
+		<div class="counter">
+
+			<div class="box">
+				<span>1+</span>
+				<h3>years of experience</h3>
+			</div>
+
+			<div class="box">
+				<span>80+</span>
+				<h3>projects completed</h3>
+			</div>
+
+			<div class="box">
+				<span>1</span>
+				<h3>happy clients</h3>
+			</div>
+
+			<div class="box">
+				<span>10+</span>
+				<h3>certificates received</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="education" id="education">
+	<h1 class="heading">my <span>education</span></h1>
+	<div class="box-container">
+
+
+		<div class="box">
+			<i class="fa fa-graduation-cap"></i> 
+			<span>2005</span>
+			<h3>primary Education</h3>
+			<p>Saraswati vidya mandir ,Uttar Pradesh
+			<br>
+			2005-2007
+			</p>
+		</div>
+
+		<div class="box">
+			<i class="fa fa-graduation-cap"></i> 
+			<span>2007</span>
+			<h3>primary Education</h3>
+			<p>Ujjwal jyoti public school,DELHI NCR
+			<br>
+			2007-2015
+			
+			</p>
+		</div>
+		<div class="box">
+			<i class="fa fa-graduation-cap"></i> 
+			<span>2015</span>
+			<h3>Secondary Education</h3>
+			<p>Chaudhary charan singh memorial public school,DELHI(ncr)
+			<br>
+			2015-2020
+		</p>
+		</div>
+
+		<div class="box">
+			<i class="fa fa-graduation-cap"></i> 
+			<span>2020</span>
+			<h3>Tertiary Education</h3>
+			<p>A.P.J kalam Technical University
+			<br>
+			2020 till Present
+			</p>
+		</div>
+
+	  
+<section class="contact" id="contact">
+	<h1 class="heading"><span>contact</span> me</h1>
+
+	<div class="row">
+
+		<div class="content">
+
+			<h3 class="title">Contact Info</h3>
+			<div class="info">
+				<h3><i class="fa fa-envelope"></i>rajputkrishu729@gmail.com</h3>
+				<h3><i class="fa fa-phone"></i>+91 8929541069</h3>
+				<h3><i class="fa fa-map-marker"></i>Ahinsa khand 2 indirapuram ghaziabad 201014</h3>
+			</div>
+		</div>
+		<form action="">
+
+			<input type="text" class="box" placeholder="name">
+			<input type="email" class="box" placeholder="email">
+			<input type="text" class="box" placeholder="projects">
+			<textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+			<button onclick="myfunc()" type="submit" class="btn">Send <i class="fa fa-paper-plane"></i></button>
+		</form>
+	</div>
+
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+	  <script>
+        function myfunc(){
+            alert("Your details has been submitted successfully..");
+        }
+	 
+	 
+   
+   window.onload = function(){
+
+  $('#menu').click(function(){
+	$(this).toggleClass('fa fa-times');
+	$('header').toggleClass('toggle');
+  });
+
+  $(window).on('scroll load',function(){
+
+	$('#menu').removeClass('fa fa-times');
+	$('header').removeClass('toggle');
+
+	if($(window).scrollTop() > 0){
+	  $('.top').show();
+	}else{
+	  $('.top').hide();
+	}
+
+  });
+
+  // smooth scrolling 
+
+  $('a[href*="#"]').on('click',function(e){
+
+	e.preventDefault();
+
+	$('html, body').animate({
+
+	  scrollTop : $($(this).attr('href')).offset().top,
+
+	},
+	  500, 
+	  'linear'
+	);
+
+  });
+
+};
+	 
+	 
+
+
+   </script>
+   
+
+</body>
+</html>
